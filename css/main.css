@@ -5,6 +5,7 @@
   --main-color: #212121;
   --first-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
+  --button-text-color: #ffffff;
 }
 
 body {
@@ -16,9 +17,6 @@ body {
 .button {
   color: var(--main-color);
   background-color: var(--accent-color);
-}
-
-.section {
 }
 
 /* Site nav */
@@ -52,7 +50,12 @@ body {
   color: #ffffff;
 }
 
+.main .button {
+  color: var(--button-text-color);
+}
+
 /* feature */
+
 .feature-list .title {
   color: var(--primary-text-color);
 }
@@ -60,6 +63,13 @@ body {
 .feature-list .text {
   color: var(--secondary-text-color);
 }
+
+/* Our-team */
+
+.team .text {
+  color: var(--secondary-text-color);
+}
+
 /* Основной цвет текста  #212121 */
 /* Вторичный цвет текста #2196F3 */
 /* Цыет копны #FFFFFF */
