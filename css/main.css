@@ -11,33 +11,82 @@
 body {
   color: var(--primary-text-color);
   background-color: var(--main-background-color);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
-/* button */
-.button {
+/* logo */
+.header-logo,
+.header-logo-text,
+.basement-logo-text,
+.basement-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.header-logo {
   color: var(--main-color);
-  background-color: var(--accent-color);
+  text-decoration: none;
 }
 
-/* Site nav */
-.logo {
+.header-logo-text,
+.basement-logo-text {
   color: var(--accent-color);
 }
 
-.list {
-  list-style: none;
+.basement-logo {
+  color: var(--button-text-color);
+  text-decoration: none;
 }
 
+/* button */
+
+.button {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+/* Site nav */
+
+.link .logo,
+.current {
+  color: var(--accent-color);
+}
+
+.list,
 .link {
   list-style: none;
+  text-decoration: none;
 }
 
 .site-nav {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.basement-link:hover,
+.basement-link:focus {
   color: var(--accent-color);
 }
 
@@ -48,35 +97,123 @@ body {
 }
 .main-title {
   color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-align: center;
 }
 
 .main .button {
   color: var(--button-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
 }
 
 /* feature */
 
 .feature-list .title {
   color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .feature-list .text {
   color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.7;
+}
+/* about */
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 /* Our-team */
-
-.team .text {
-  color: var(--secondary-text-color);
+.team {
+  background-color: var(--secondary-background-color);
+  color: var(--main-color);
+  text-align: center;
 }
 
-/* Основной цвет текста  #212121 */
-/* Вторичный цвет текста #2196F3 */
-/* Цыет копны #FFFFFF */
-/* Цвет мейла  #2196F3; */
-/* Цвет телефона #757575*/
-/* Акцент #2196F3 */
-/* Цвет заголовков #212121*/
-/* Цвет абзаца #757575 */
-/* background темній  #2F303A  светлій #FFFFFF*/
-/* background наша команда #F5F4FA */
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.team-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Basement */
+.basement {
+  color: var(--basement-text-color);
+  background-color: var(--first-background-color);
+}
+
+.basement-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.basement-address {
+  color: var(--button-text-color);
+  font-style: normal;
+  text-decoration: none;
+}
+
+/* Portfolio */
+.portfolio-filter:hover,
+.portfolio-filter:focus {
+  color: var(--accent-color);
+  background-color: var(--secondary-background-color);
+}
+
+.portfolio-filter {
+  color: var(--button-text-color);
+  cursor: pointer;
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* .visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+} */

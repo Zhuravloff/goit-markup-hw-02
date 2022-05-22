@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Main</title>
   </head>
@@ -11,11 +15,13 @@
   <body>
     <!--Site-nav-->
     <header>
-      <a href="#" class="logo">Web Studio</a>
+      <a href="#" class="header-logo"
+        ><span class="header-logo-text">Web</span>Studio</a
+      >
       <nav>
         <ul class="site-nav list">
-          <li><a href="#" class="link">Студия</a></li>
-          <li><a href="#" class="link">Портфолио</a></li>
+          <li><a href="#" class="link current">Студия</a></li>
+          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
           <li><a href="#" class="link">Контакты</a></li>
         </ul>
       </nav>
@@ -36,7 +42,7 @@
       </section>
 
       <!--feature-->
-      <section class="section">
+      <section>
         <ul class="feature-list list">
           <li>
             <h3 class="title">Внимание к деталям</h3>
@@ -70,8 +76,8 @@
       </section>
 
       <!--About-us-->
-      <section class="section">
-        <h2 class="section-title">Чем мы занимаемся</h2>
+      <section>
+        <h2 class="about-title">Чем мы занимаемся</h2>
         <ul>
           <li>
             <img
@@ -96,15 +102,15 @@
       <!--Our-team-->
       <section class="team">
         <h2 class="team-title">Наша команда</h2>
-        <ul class="list">
+        <ul class="team-list list">
           <li>
             <img
               src="./images/our_team/team_Igor.jpg"
               alt="Игорь дизайн"
               width="270"
             />
-            <h3>Игорь Демьяненко</h3>
-            <p class="text">Product Designer</p>
+            <h3 class="team-item">Игорь Демьяненко</h3>
+            <p class="team-text">Product Designer</p>
           </li>
           <li>
             <img
@@ -112,8 +118,8 @@
               alt="Ольга разработка"
               width="270"
             />
-            <h3>Ольга Репина</h3>
-            <p class="text">Frontend Developer</p>
+            <h3 class="team-item">Ольга Репина</h3>
+            <p class="team-text">Frontend Developer</p>
           </li>
           <li>
             <img
@@ -121,8 +127,8 @@
               alt="Николай маркетинг"
               width="270"
             />
-            <h3>Николай Тарасов</h3>
-            <p class="text">Marketing</p>
+            <h3 class="team-item">Николай Тарасов</h3>
+            <p class="team-text">Marketing</p>
           </li>
           <li>
             <img
@@ -130,18 +136,20 @@
               alt="Михаил дизайнер"
               width="270"
             />
-            <h3>Михаил Ермаков</h3>
-            <p class="text">UI Designer</p>
+            <h3 class="team-item">Михаил Ермаков</h3>
+            <p class="team-text">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <!--Basement-->
-    <footer>
-      <a href="/">Web Studio</a>
+    <footer class="basement">
+      <a href="#" class="basement-logo"
+        ><span class="basement-logo-text">Web</span>Studio</a
+      >
       <address>
-        <ul>
-          <li>
+        <ul class="list">
+          <li class="basement-address">
             <a
               href="https://goo.gl/maps/DohBmXVmKKmNJgUr5"
               target="_blank"
@@ -150,10 +158,12 @@
             >
           </li>
           <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="basement-link"
+              >info@devstudio.com</a
+            >
           </li>
           <li>
-            <a href="tel:+380961111111">+380961111111</a>
+            <a href="tel:+380961111111" class="basement-link">+380961111111</a>
           </li>
         </ul>
       </address>
