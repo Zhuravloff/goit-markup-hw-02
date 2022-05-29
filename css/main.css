@@ -61,9 +61,13 @@ body {
 /* button */
 
 .button {
-  color: var(--main-color);
-  background-color: var(--accent-color);
+  font-family: inherit;
   cursor: pointer;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
 }
 
 /* Site nav */
@@ -71,6 +75,7 @@ body {
 .header {
   line-height: 1.2;
   letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 .current {
@@ -78,7 +83,6 @@ body {
 }
 
 .site-nav {
-  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -115,9 +119,8 @@ body {
 
 .hero .button {
   color: var(--button-text-color);
+  background-color: var(--accent-color);
   font-weight: 700;
-  font-size: 16px;
-  font-family: inherit;
   line-height: 1.8;
   letter-spacing: 0.06em;
 }
@@ -158,6 +161,9 @@ body {
   font-size: 16px;
   line-height: 1.2;
 }
+.team-text {
+  color: var(--secondary-text-color);
+}
 
 /* Basement */
 .basement {
@@ -194,7 +200,7 @@ body {
   background-color: var(--secondary-background-color);
   cursor: pointer;
   text-align: center;
-  border: none;
+  border: no;
 }
 
 .portfolio-title {
